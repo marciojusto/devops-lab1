@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="devops-labs1" />
+        <module name="devops-lab1" />
       </profile>
     </annotationProcessing>
   </component>

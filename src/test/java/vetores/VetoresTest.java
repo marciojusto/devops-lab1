@@ -1,10 +1,8 @@
 package vetores;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-@RunWith(JUnit4.class)
 public class VetoresTest {
 
     String[] vetor = {"Texto 1", "Texto 2"};
@@ -12,6 +10,15 @@ public class VetoresTest {
 
     @Test
     public void deveRetornarElementoDeAcordoComIndice() {
+        int i = 0;
+        for(String elemento : vetor) {
+            Assertions.assertEquals(elemento, v.retornaElemento(vetor, i));
+            i++;
+        }
+    }
+
+    @Test
+    public void deveLancarExcecaoParaArrayNulo() {
 
     }
 }
